@@ -11,19 +11,6 @@
 #define CLR_RESET "\033[0m"
 #define CLR_TITLE "\033[1;36m"
 
-void screenmenu()
-{
-    printf(CLR_TITLE"\nWelcome to the Movie Ticket Booking System\n"CLR_RESET);
-    printf("1. View Films showtimes\n");
-    printf("2. View seat Map\n ");
-    printf("3. Book a ticket\n");
-    printf("4. cancel a tocket\n");
-    printf("5. search a booking\n");
-    printf("6. View Revenue Report\n");
-    printf("7. Exit\n");
-    printf("Enter your choice:");
-
-}
 
 int main()
 {
