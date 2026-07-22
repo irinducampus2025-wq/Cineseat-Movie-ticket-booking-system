@@ -14,12 +14,11 @@
 
 int main()
 {
-    leadCatalog();
+    loadCatalog();
     for (;;)
     {
-        screenmenu();
-        scanf("%d", &choice);
-        int choice = getIntBetween("choice",1,7);
+        screenMenu();
+        int choice = getIntBetween(" Enter your choice",1,7);
         
         switch(choice)
         {
@@ -28,7 +27,9 @@ int main()
             break;
             case 2:
             {
-                int f,s;pickshow(&f,&s);screenSeatGride(f,s);
+                int f,s;
+                pickShow(&f,&s);
+                screenSeatGrid(f,s);
                 break;
             }
             case 3:

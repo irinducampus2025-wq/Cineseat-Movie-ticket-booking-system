@@ -10,7 +10,7 @@
 #define CLR_ERR   "\033[1;31m"
 #define CLR_INFO  "\033[0;35m"
 
-void banner (cost char *text){
+void banner (const char *text){
     printf("\n"CLR_TITLE"== %s ==" CLR_RESET "\n",text);
 }
 
@@ -31,15 +31,15 @@ void screenFilmList(void) {
     banner("NOW SHOWING");
     for (int f=0; f< MAX_FILMS;f++){
         printf(CLR_INFO "%d. %s"CLR_RESET "\n", f+1,films[f].title);
-        for (int s =0; s< SHOWS_PER_FILMS;s++)
+        for (int s =0; s< SHOWS_PER_FILM;s++)
             printf("       (%d) %s\n",s+1,films[f].shows[s].time);
     }
 }
 
 int pickShow(int *f,int *sh){
     screenFilmList();
-    *f  =getIntBetween("Movie #: ",1,MAX_FILMS) -1;
-    *sh =getIntBetween("Showtime #: ",1,SHOWS_PER_FILM) -1;
+    *f  = getIntBetween("Movie #: ",1,MAX_FILMS) -1;
+    *sh = getIntBetween("Showtime #: ",1,SHOWS_PER_FILM) -1;
     return 1;
 }
 

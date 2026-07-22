@@ -6,7 +6,7 @@ Tier tierOf(int row) {
    return TIER_VIP;                   // E
 }
 
-const char *teirLabal(Tier t) {
+const char *tierLabel(Tier t) {
    switch (t) {
        case TIER_REGULAR: return "Regular";
        case TIER_PREMIUM: return "Premium";
@@ -16,13 +16,13 @@ const char *teirLabal(Tier t) {
 double basePrice(Tier t) {
    switch (t){
       case TIER_REGULAR: return 500.0;
-      case TIER_PREMIUM; return 750.0;
+      case TIER_PREMIUM: return 750.0;
       default:              return 1000.0;
    }
 }
 double priceFor(Tier t, int student, int senior, int group) {
     double price = basePrice(t);
-    double cut = senior ? 0.20 : (student ? 0.10 : 0.0;
+    double cut = senior ? 0.20 : (student ? 0.10 : 0.0);
     if (group) cut += 0.10;
     return price * (1.0 - cut);
 }
