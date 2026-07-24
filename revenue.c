@@ -21,5 +21,5 @@ void actionSummary(void) {
         }
     }
     printf(CLR_TITLE "  -----------------------------------------\n" CLR_RESET);
-    printf(CLR_TITLE "  TOTAL: %d sold, Rs.%2f\n" CLR_RESET, totalTickets, totalEarn);
+    printf(CLR_TITLE "  TOTAL: %d sold, Rs.%.2f\n" CLR_RESET, totalTickets, totalEarn);
 }
