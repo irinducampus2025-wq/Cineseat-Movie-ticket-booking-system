@@ -1,6 +1,11 @@
 #ifndef SEARCH_H
 #define SEARCH_H
 
-void actionFind(void);
+#include "types.h"
 
-#endif /* SEARCH_H */
+void actionFind(void);
+int parseSeatCode(const char *code, int *row, int *col);
+
+
+
+#endif
