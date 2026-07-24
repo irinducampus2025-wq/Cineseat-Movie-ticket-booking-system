@@ -6,4 +6,6 @@
 void actionFind(void);
 int parseSeatCode(const char *code, int *row, int *col);
 
+
+
 #endif
