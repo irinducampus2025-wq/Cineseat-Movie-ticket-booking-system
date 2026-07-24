@@ -4,6 +4,7 @@
 #include "input.h"
 
 
+
 char *getLine(char *buffer , int size) {
     if (fgets(buffer, size, stdin)== NULL){
         return NULL;

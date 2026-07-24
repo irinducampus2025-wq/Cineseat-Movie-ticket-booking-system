@@ -1,9 +1,9 @@
 #include "pricing.h"
 
 Tier tierOf(int row) {
-   if (row <= 1) return TIER_REGULAR; // A,B
-   if (row <= 3) return TIER_PREMIUM; // C,D
-   return TIER_VIP;                   // E
+   if (row <= 1) return TIER_REGULAR;
+   if (row <= 3) return TIER_PREMIUM;
+   return TIER_VIP;
 }
 
 const char *tierLabel(Tier t) {
