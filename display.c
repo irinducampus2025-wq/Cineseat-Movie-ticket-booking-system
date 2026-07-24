@@ -4,6 +4,7 @@
 #include "pricing.h"
 #include "display.h"
 
+
 #define CLR_RESET "\033[0m"
 #define CLR_TITLE "\033[1;36m"
 #define CLR_OK    "\033[1;32m"
