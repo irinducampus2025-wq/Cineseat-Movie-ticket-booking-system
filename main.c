@@ -18,7 +18,7 @@ int main()
     for (;;)
     {
         screenMenu();
-        int choice = getIntBetween(" Enter your choice :",1,7);
+        int choice = getIntBetween(" Enter your choice : ",1,7);
 
         switch(choice)
         {
