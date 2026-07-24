@@ -18,8 +18,8 @@ int main()
     for (;;)
     {
         screenMenu();
-        int choice = getIntBetween(" Enter your choice",1,7);
-        
+        int choice = getIntBetween(" Enter your choice :",1,7);
+
         switch(choice)
         {
             case 1:
@@ -47,6 +47,7 @@ int main()
             case 7:
             printf(CLR_TITLE"\nThank you for using our system good bye!\n"CLR_RESET);
             return 0;
-        }   
+        }
+        pauseForUser();
     }
 }
