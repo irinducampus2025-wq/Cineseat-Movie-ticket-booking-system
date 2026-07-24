@@ -58,7 +58,7 @@ void actionFind(void) {
             printf(CLR_ERR " %c%d is still free.\n" CLR_RESET, 'A' + r, c + 1);
             return; 
         }
-        printf(CLR_OK "%c%d -> %s, paid Rs. %.2f\n" CLR_RESET, 
+        printf(CLR_OK "%c%d -> %s, paid Rs. %.2f\n\n" CLR_RESET, 
                'A' + r, c + 1, tk->bookedBy, tk->amountPaid);
     }
 }
