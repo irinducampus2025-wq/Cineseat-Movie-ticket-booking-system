@@ -1,15 +1,18 @@
-#ifndef PRICING_H
-#define PRICING_H
+#ifndef DISPLAY_H
+#define DISPLAY_H
 
 #include "types.h"
 
 
 
-Tier tierOf(int row);
-const char *tierLabel(Tier t);
-double basePrice(Tier t);
+void banner(const char *text);
+void screenMenu(void);
+void screenFilmList(void);
 
 
-double priceFor(Tier t, int student, int senior, int group);
+
+int pickShow(int *f,int *sh);
+
+void screenSeatGrid(int f,int sh);
 
 #endif

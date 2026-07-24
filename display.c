@@ -4,6 +4,7 @@
 #include "pricing.h"
 #include "display.h"
 
+
 #define CLR_RESET "\033[0m"
 #define CLR_TITLE "\033[1;36m"
 #define CLR_OK    "\033[1;32m"
@@ -17,8 +18,8 @@ void banner (const char *text){
 void screenMenu(void){
     printf("\n"CLR_TITLE "#########################################"CLR_RESET"\n");
     printf(CLR_TITLE "  MOVIE TICKET BOOKING SYSTEM" CLR_RESET "\n");
-    printf(CLR_TITLE "#######################################"CLR_RESET);
-    printf(CLR_OK " 1)" CLR_RESET " View Showtimes\n"};
+    printf(CLR_TITLE "#########################################\n" CLR_RESET);
+    printf(CLR_OK "\n 1)" CLR_RESET " View Showtimes\n");
     printf(CLR_OK " 2)" CLR_RESET " View Seat Map\n");
     printf(CLR_OK " 3)" CLR_RESET " Boook a Seat\n");
     printf(CLR_OK " 4)" CLR_RESET " Cancel a Booking\n");
@@ -59,7 +60,7 @@ void screenSeatGrid(int f,int sh){
             if (s ->seats[r][c].taken)
                 printf(CLR_ERR" X " CLR_RESET);
             else
-                printf(CLR_OK"  . " CLR_RESET);
+                printf(CLR_OK" . " CLR_RESET);
 
         }
         printf(" %s\n",tierLabel(tierOf(r)));
