@@ -1,18 +1,12 @@
-#ifndef DATA_H
-#define DATA_H
+#ifndef INPUT_H
+#define INPUT_H
 
 #include "types.h"
 
+int getIntBetween(const char *prompt,int min,int max);
+char *getLine(char *buffer,int size);
+int getYesNo(const char *prompt);
+void pauseForUser(void);
 
-
-extern Movie movies[NUM_MOVIES];
-
-
-void initMovies(void);
-
-SeatTier tierForRow(int rowIndex);
-
-
-int isValidSeat(int row, int col);
 
 #endif
